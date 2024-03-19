@@ -1,4 +1,4 @@
-public class KomputerMac implements Komputer{
+public class KomputerMac implements Komputer {
 
     private String model;
     private String wersjaSystemu;
