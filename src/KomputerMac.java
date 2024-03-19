@@ -14,4 +14,14 @@ public class KomputerMac implements Komputer {
     public void zepsujSie() {
         System.out.println("Zepsuło się");
     }
+
+    @Override
+    public int compareTo(Komputer o) {
+        if(o.getClass().equals(getClass())){
+            return model.length() - ((KomputerMac)o).model.length();
+        } else if (o.getClass().getName().endsWith("KomputerWindows")) {
+            
+        }
+        return 1;
+    }
 }
